@@ -19,11 +19,33 @@ const getPlacesData = async ({ bounds: { ne, sw }, mapType }) => {
 
     try {
         const res = await axios.request(URL, options);
-        console.log("yd", res);
         return res.data;
     } catch (err) {
         console.error(err);
     }
 };
 
-export { getPlacesData };
+const getPlacesWeather = async ({ lat, lng }) => {
+    const URL = "https://community-open-weather-map.p.rapidapi.com/find";
+
+    const options = {
+        params: {
+            lat: lat,
+            lon: lng,
+        },
+        headers: {
+            "X-RapidAPI-Key":
+                "9b32088caamsh30148e05a004a97p19460ajsnaf66c4e9f44b",
+            "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
+        },
+    };
+
+    try {
+        const res = await axios.request(URL, options);
+        return res.data;
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+export { getPlacesData, getPlacesWeather };

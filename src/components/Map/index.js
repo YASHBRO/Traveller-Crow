@@ -13,11 +13,11 @@ const Map = ({
     setBounds,
     places,
     setChildClicked,
+    weatherData,
 }) => {
     const isDesktop = useMediaQuery("(min-width:600px");
 
     const handleMapChange = (e) => {
-        console.log("yd map change");
         setCoordinates({ lat: e.center.lat, lng: e.center.lng });
         setBounds({ ne: e.bounds.ne, sw: e.bounds.sw });
     };
@@ -70,6 +70,20 @@ const Map = ({
                         ) : (
                             <LocationOnIcon color="primary" fontSize="large" />
                         )}
+                    </Box>
+                ))}
+                {weatherData?.map((data, index) => (
+                    <Box
+                        variant="div"
+                        key={index}
+                        lat={data.coord.lat}
+                        lng={data.coord.lon}
+                    >
+                        <img
+                            height={75}
+                            src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
+                            alt={data.weather[0]}
+                        />
                     </Box>
                 ))}
             </GoogleMapReact>

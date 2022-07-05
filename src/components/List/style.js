@@ -15,6 +15,7 @@ const styles = {
     },
     container: {
         padding: "25px",
+        pb: 0,
     },
     marginBottom: {
         marginBottom: "30px",

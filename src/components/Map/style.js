@@ -7,7 +7,7 @@ const styles = {
         width: "100px",
     },
     mapContainer: {
-        height: "90vh",
+        height: "93vh",
         width: "100%",
     },
     markerContainer: {

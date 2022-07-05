@@ -22,7 +22,6 @@ const List = ({
     childClicked,
     loading,
 }) => {
-    
     const [eleRefs, setEleRefs] = useState([]);
 
     useEffect(() => {
@@ -44,46 +43,52 @@ const List = ({
 
     return (
         <Box sx={styles.container}>
-            <Typography variant="h4">
+            <Typography variant="h4" sx={{ mb: 2 }}>
                 <span style={styles.titleAccent}>Restraunts</span>,{" "}
                 <span style={styles.titleAccent}>Hotels</span> &{" "}
                 <span style={styles.titleAccent}>Attractions</span> around you
             </Typography>
+            <FormControl sx={styles.formControl}>
+                <InputLabel>Type</InputLabel>
+                <Select
+                    label="Type"
+                    value={mapType}
+                    onChange={handleMapTypeChange}
+                >
+                    <MenuItem value="restaurants">Restaurants</MenuItem>
+                    <MenuItem value="hotels">Hotels</MenuItem>
+                    <MenuItem value="attractions">Attractions</MenuItem>
+                </Select>
+            </FormControl>
+            <FormControl sx={styles.formControl}>
+                <InputLabel>Rating</InputLabel>
+                <Select
+                    label="Rating"
+                    value={rating}
+                    onChange={handleRatinChange}
+                >
+                    <MenuItem value={0}>All</MenuItem>
+                    <MenuItem value={3}>Above 3</MenuItem>
+                    <MenuItem value={4}>Above 4</MenuItem>
+                    <MenuItem value={4.5}>Above 4.5</MenuItem>
+                </Select>
+            </FormControl>
             {loading ? (
                 <Box sx={styles.loading}>
                     <CircularProgress size="5rem" />
                 </Box>
             ) : (
-                <>
-                    <FormControl sx={styles.formControl}>
-                        <InputLabel>Type</InputLabel>
-                        <Select value={mapType} onChange={handleMapTypeChange}>
-                            <MenuItem value="restaurants">Restaurants</MenuItem>
-                            <MenuItem value="hotels">Hotels</MenuItem>
-                            <MenuItem value="attractions">Attractions</MenuItem>
-                        </Select>
-                    </FormControl>
-                    <FormControl sx={styles.formControl}>
-                        <InputLabel>Rating</InputLabel>
-                        <Select value={rating} onChange={handleRatinChange}>
-                            <MenuItem value={0}>All</MenuItem>
-                            <MenuItem value={3}>Above 3</MenuItem>
-                            <MenuItem value={4}>Above 4</MenuItem>
-                            <MenuItem value={4.5}>Above 4.5</MenuItem>
-                        </Select>
-                    </FormControl>
-                    <Grid container sx={styles.list}>
-                        {places?.map((place, index) => (
-                            <Grid item xs={12} key={index}>
-                                <PlaceDetails
-                                    place={place}
-                                    selected={Number(childClicked) === index}
-                                    refProps={eleRefs[index]}
-                                />
-                            </Grid>
-                        ))}
-                    </Grid>
-                </>
+                <Grid container sx={styles.list}>
+                    {places?.map((place, index) => (
+                        <Grid item xs={12} key={index}>
+                            <PlaceDetails
+                                place={place}
+                                selected={Number(childClicked) === index}
+                                refProps={eleRefs[index]}
+                            />
+                        </Grid>
+                    ))}
+                </Grid>
             )}
         </Box>
     );
