@@ -11,8 +11,7 @@ const getPlacesData = async ({ bounds: { ne, sw }, mapType }) => {
             tr_longitude: ne.lng,
         },
         headers: {
-            "X-RapidAPI-Key":
-                "9b32088caamsh30148e05a004a97p19460ajsnaf66c4e9f44b",
+            "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
             "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
         },
     };
@@ -34,8 +33,7 @@ const getPlacesWeather = async ({ lat, lng }) => {
             lon: lng,
         },
         headers: {
-            "X-RapidAPI-Key":
-                "9b32088caamsh30148e05a004a97p19460ajsnaf66c4e9f44b",
+            "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_KEY,
             "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
         },
     };
