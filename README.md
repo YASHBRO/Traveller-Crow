@@ -7,7 +7,6 @@ Traveller Crow</h1>
 Web app which suggests good restaurants, hotels, and tourist attractions around any location.
 
 Tech Stack:
-
 - React Js
 - Rapid API
 - Google Maps API 
@@ -20,6 +19,8 @@ Tech Stack:
 - You can filter them out on the basis of their ratings.
 - Also shows weather details of that location on the map
 - Can get your location automatically, or you can change to any other location using the search bar provided.
+
+Live @ [Traveller Crow](https://teal-caramel-6b5747.netlify.app/)
 
 ## Requirements
 
