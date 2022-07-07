@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+<h1 align="center">
+<img src='./public/TravellerCrow.jpg' height='50px' />
+<br/>
+Traveller Crow</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Web app which suggests good restaurants, hotels, and tourist attractions around any location.
 
-In the project directory, you can run:
+Tech Stack:
 
-### `npm start`
+- React Js
+- Rapid API
+- Google Maps API 
+- Material UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- This app display the list of hotels, restaurants and tourist attractions and also pin points it on the map.
+- You can select between hotels, restaurants and tourist attractions whichever you want to see.
+- You can filter them out on the basis of their ratings.
+- Also shows weather details of that location on the map
+- Can get your location automatically, or you can change to any other location using the search bar provided.
 
-### `npm test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Node**
 
-### `npm run build`
+    -   after installing node to your system, the further requirements are in `package.json` file
+    -   To install, run"
+                
+            npm install    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ### How to run :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    After installing the mentioned dependencies, open your terminal in the root directory and then run the following commands :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        npm run start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Developer:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### _Yash Joglekar_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+My GitHub - [YASHBRO](https://github.com/YASHBRO/ "Contact me here")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+_For suggestions or bug/error report:_
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Raise an issue, I'll surely look into it as soon as possible
+-   Or mail me @ :- [yashjoglekar2012@gmail.com](https://mail.google.com/mail/u/0/?fs=1&to=yashjoglekar1220@gmail.com&su=Issue+with+Traveller+Crow+repository&body=Write+your+issues+here:%0A "Click to send an email")
