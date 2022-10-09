@@ -20,7 +20,7 @@ Tech Stack:
 - Also shows weather details of that location on the map
 - Can get your location automatically, or you can change to any other location using the search bar provided.
 
-Live @ [Traveller Crow](https://teal-caramel-6b5747.netlify.app/)
+Live @ [Traveller Crow](https://traveller-crow.netlify.app//)
 
 ## Requirements
 
